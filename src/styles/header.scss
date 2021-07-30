@@ -1,0 +1,177 @@
+.orange-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.nav__content {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+
+    .nav__items{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        .nav__item{
+            
+            a {
+            text-decoration: none;
+            margin-right: 60px;
+            color: $nav-color;
+            font-family: "Google-sans";
+            font-size: 17px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            &:hover {
+                text-decoration: underline;
+            }      
+            }
+        }       
+    }
+}
+
+.nav__subscription {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.subscription-button {
+    background-color: transparent;
+    border: none;
+    margin-right: 60px;
+    color: $nav-color;
+    font-family: "Google-sans";
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    &:hover {
+        border: 1px solid $nav-color;
+        border-radius: 5px;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.05);
+    }
+
+   
+
+}
+
+.nav__languages {
+display: flex;
+}
+
+.languages-select {
+    border: none;
+    background-color: transparent;
+    &:hover {
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.05);
+    }
+}
+
+.header__main {
+    position: relative;
+    margin-top: 50px;
+    
+    
+}
+
+.header-content {
+    width: 50%;
+    padding-top: 110px;
+    z-index: 1;
+}
+
+.header__main-image {
+    position: absolute;
+    top: 0;
+    right:-90px;
+}
+
+.header-content__title {
+    margin: 0;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: bold;
+    color: $orange;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 20px;
+    font-family: "Volkhov";
+    font-size: 84px;
+    font-weight: bold;
+    color: $h1color;
+    line-height: 89px;
+}
+
+.header-content-decor {
+    position: absolute;
+    top: 230px;
+    left: 260px;
+    z-index: -1;
+}
+
+.header-content__text {
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.button-find {
+    background-color: $yellow;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    border: none;
+        span {
+            font-family: "Google-san";
+            font-size: 18px;
+        }
+
+}
+
+.button-play {
+    position: relative;
+    margin-left: 120px;
+    border: none;
+    background-color: transparent;
+    &:before {
+        width: 52px;
+        height: 52px;
+        content: "";
+        position: absolute;
+        border: none;
+        background-color: $orange;
+        border-radius: 50%;
+        top: -15px;
+        left: -70px;
+    }
+
+    span {
+        font-family: "Poppins";
+            font-size: 17px;
+    }
+    
+}
+
+.button-play-polygon {
+    position: absolute;
+    left: -52px;
+    top: 4px;
+}

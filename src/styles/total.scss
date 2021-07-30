@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volkhov';
+    src: url('../fonts/Volkhov/Volkhov-Regular.woff2') format('woff2'),
+        url('../fonts/Volkhov/Volkhov-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans';
+    src: url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google-sans';
+    src: url('../fonts/GoogleSans/GoogleSans-Regular.woff') format('woff'),
+        url('../fonts/GoogleSans/GoogleSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$general-color: #5E6282;
+$nav-color: #212832;
+$orange: #DF6951;
+$yellow: #F1A501;
+$h1color: #181E4B;
+
+
+
+body {
+    font-family:  "Poppins" ; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $general-color;
+    
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+
+}
