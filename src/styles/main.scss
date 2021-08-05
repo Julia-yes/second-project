@@ -1,0 +1,172 @@
+main {
+    margin-top: 200px;
+    position: relative;
+}
+
+.category-decor {
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+
+.name {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Volkhov";
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: $titlecolor;
+}
+
+.category__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.category-item {
+    
+    border-radius: 36px;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 100px 80px rgba(0,0,0,0.05);
+    }
+    img {
+        width: 95px;
+        height: 80px;
+        overflow: hidden;
+        object-fit: contain;
+        display: flex;
+        margin: 35px auto;
+        text-align: center;
+        
+    }
+}
+
+.category-item .flight {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.category-item-title {
+    font-family: "Open-sans";
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.category-item-content {
+    font-family: "Poppins";
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 40px 40px 40px;
+    line-height: 26px;
+}
+
+.destinations-decor {
+    position: absolute;
+    top: 935px;
+    right: 295px;
+}
+
+.destinations__name {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 10px;
+}
+
+.destination__items {
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    column-gap: 80px;
+}
+
+.destination__item {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 100px 80px rgba(0,0,0,0.05);
+    border-radius: 24px;
+    
+}
+
+.destination-background {
+    width: 315px;
+    height: 460px;
+    left:0;
+    background-position: top left;
+    border-radius: 24px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.destination1 {
+    background-image: url("../images/Rome1.png");
+}
+
+.destination2 {
+    background-image: url("../images/London1.jpg");
+}
+
+.destination3 {
+    background-image: url("../images/Europe1.png");
+}
+
+.destination-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    background-color: white;
+    border-radius: 0 0 24px 24px;
+    display: inline-block;
+    width: 100%;
+}
+
+.destination-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.destination-place,
+.destination-price,
+.destination-term {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.destination-term {
+    font-size: 16px;
+}
+
+.destination-place {
+    margin-left: 20px;
+}
+
+.destination-price {
+    margin-right: 20px;
+}
+
+.destination-vector {
+    position: absolute;
+    left: 20px;
+}
+
+.destination-term {
+    margin-left: 55px;
+
+}

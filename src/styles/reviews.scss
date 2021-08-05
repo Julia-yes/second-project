@@ -1,0 +1,143 @@
+.reviews {
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    h2 {
+        text-align: left;
+        text-transform: capitalize;
+    }
+}
+.reviews__name {
+    text-align: left;
+}
+
+.reviews__items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+
+.review {
+    position: absolute;
+    top: 95px;
+    left: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    
+    margin-bottom: 100px;
+    img {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+    }
+
+}
+
+.visible {
+    position: relative;
+    box-shadow: 20px 20px 150px rgba(0, 0, 0, 0.082);
+    
+}
+
+.review-content {
+    margin: 45px 70px 25px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+}
+
+.review-text {
+    
+    text-align: justify;
+    line-height: 32px;
+}
+
+.review-autor {
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rewiew-location {
+    font-size: 14px;
+}
+
+.slider__arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    right: -90px;
+}
+
+.slider__arrow_top {
+   top: 115px;
+}
+
+.slider__arrow_bottom {
+    top: 180px;
+}
+
+.slider__arrow:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #BCB7C2;    
+    cursor: pointer;
+}
+
+.slider__arrow_top:before {
+    border-left: 2px solid #BCB7C2;
+    transform: rotate(44deg);
+}
+
+.slider__arrow_bottom:before {
+    border-right: 2px solid #BCB7C2;
+    transform: rotate(133deg);
+}
+
+.slider__arrow_top:hover:before {
+    border-top: 2px solid #3E2E4D;
+    border-left: 2px solid #3E2E4D;
+}
+
+.slider__arrow_bottom:hover:before {
+    border-top: 2px solid #3E2E4D;
+    border-right: 2px solid #3E2E4D;
+}
+
+.slider__buttons {
+    display: flex;
+    position: absolute;
+    top: 250px;
+    left: 35px;
+    transform: translate(-50%,-50%);
+}
+
+.slider__button {
+    
+    display: flex; 
+    margin: 10px;
+    padding: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #BCB7C2;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__button:hover {
+    background-color: #3E2E4D;
+}
+
+.slider__button_active {
+    background-color: #3E2E4D;
+}

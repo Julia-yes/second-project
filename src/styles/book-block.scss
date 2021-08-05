@@ -1,0 +1,166 @@
+.steps {
+    margin-top: 185px;
+    position: relative;
+    h2 {
+        text-transform: capitalize;
+        text-align: left;
+    }
+}
+
+.steps__name {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.steps__items {
+    width: 35%;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.step-image {
+    position: absolute;
+}
+
+.step-title,
+.step-content {
+    font-family: "Poppins";
+    font-size: 16px;
+    
+    margin-left: 70px;
+}
+
+.step-title {
+    font-weight: bold;
+}
+
+.trip {
+    position: absolute;
+    top: 100px;
+    right: 100px;    
+    border-radius: 26px;
+    box-shadow: 45px -60px 150px $shadow-blue,
+    -20px 20px 150px rgba(0, 0, 0, 0.164);
+   
+}
+
+.trip__img {
+    margin: 20px 25px 25px 25px;
+}
+
+.trip__name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $trip-name;
+    margin-bottom: 15px;
+    letter-spacing: 1.5%;
+    margin-left: 25px;
+}
+
+.trip__term {
+    display: inline;
+    padding-right: 5px;
+    border-right: 1px solid black;
+    margin-left: 25px;
+}
+
+.trip__holder {
+    display: inline;
+    margin-left: 10px;
+}
+
+.trip__buttons {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.trip-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 15px;
+    
+}
+
+.trip__calc {
+    margin-left: 25px;
+    margin-bottom: 30px;
+    img {
+        margin-right: 10px;
+    }
+}
+
+.trip__heart {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+.ongoing {
+    position: absolute;
+    top: 230px;
+    right: -110px;    
+    border-radius: 26px;
+    box-shadow: -20px 20px 150px rgba(0, 0, 0, 0.164);
+    background-color: white;
+    img {
+        position: absolute;
+        display: inline-block;
+        margin: 20px;
+        border-radius: 50%;
+    }
+}
+
+.ongoing__content {
+    display: inline-block;
+    margin: 15px 20px 20px 80px;
+    color: $trip-name;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ongoing__status {
+    margin-bottom: 5px;
+    color: $trip-content;
+}
+
+.ongoing__direction {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.ongoing__completed {
+    display: inline-block;
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.completed-percent {
+    color: $completed;
+    margin-right: 5px;
+}
+
+.completed {
+    width: 155px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+}
+
+.completed-colored {
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: $completed;
+}
