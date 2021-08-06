@@ -35,6 +35,8 @@ h2 {
     
     border-radius: 36px;
     cursor: pointer;
+    background-color: white;
+    z-index: 2;
     &:hover {
         box-shadow: 0 100px 80px rgba(0,0,0,0.05);
     }
@@ -48,6 +50,34 @@ h2 {
         text-align: center;
         
     }
+}
+
+.section-decor-item {
+    position: absolute;
+    top:420px;
+    z-index: 1;
+    opacity: 0;
+    
+}
+
+.decor-item1 {
+    left: 320px;
+}
+
+.decor-item2 {
+    left: 630px;
+}
+
+.decor-item3 {
+    left: 940px;
+}
+
+.decor-item4 {
+    left: 1245px;
+}
+
+.decor-item-visible {
+    opacity: 1;
 }
 
 .category-item .flight {
@@ -75,7 +105,7 @@ h2 {
 .destinations-decor {
     position: absolute;
     top: 935px;
-    right: 295px;
+    right: 380px;
 }
 
 .destinations__name {
