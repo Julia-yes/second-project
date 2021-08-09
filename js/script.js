@@ -7,9 +7,9 @@ let currentSlide = 0;
 
 function render(index, slides, sliderButtons) {
     slides.forEach(function(slide, slidesIndex) {
-        slide.classList.remove("visible");
+        slide.classList.remove("first");
     });
-    slides[index].classList.add("visible");
+    slides[index].classList.add("first");
     sliderButtons.forEach(function(sliderButton, sliderButtonIndex) {
         sliderButton.classList.remove("slider__button_active");
     });
@@ -23,7 +23,7 @@ sliderButtons.forEach(function(sliderButton, sliderButtonIndex) {
     });
 });
 
-arrowLeft.addEventListener('click', function() {
+arrowBottom.addEventListener('click', function() {
     if (currentSlide === 0) {
         currentSlide += (slides.length - 1);
     }
@@ -33,7 +33,7 @@ arrowLeft.addEventListener('click', function() {
     render(currentSlide, slides, sliderButtons);
 })
 
-arrowRight.addEventListener('click', function() {
+arrowTop.addEventListener('click', function() {
     if (currentSlide === (slides.length - 1)) {
         currentSlide -= (slides.length - 1);
     }

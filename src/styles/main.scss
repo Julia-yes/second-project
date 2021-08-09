@@ -29,6 +29,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
+    
 }
 
 .category-item {
@@ -36,10 +37,27 @@ h2 {
     border-radius: 36px;
     cursor: pointer;
     background-color: white;
-    z-index: 2;
+    
+    transition: box-shadow 0.3s;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        z-index: -1;        
+        bottom: -30px;
+        left: -30px;
+        background: url(../images/category-decor.png);
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
     &:hover {
         box-shadow: 0 100px 80px rgba(0,0,0,0.05);
+        &:before {
+            opacity: 1;
+        }
     }
+    
     img {
         width: 95px;
         height: 80px;
@@ -50,30 +68,33 @@ h2 {
         text-align: center;
         
     }
+    div{
+        z-index: 2;
+    }
 }
 
 .section-decor-item {
     position: absolute;
-    top:420px;
+    bottom: -30px;
     z-index: 1;
     opacity: 0;
     
 }
 
 .decor-item1 {
-    left: 320px;
+    left: -30px;
 }
 
 .decor-item2 {
-    left: 630px;
+    left: 275px;
 }
 
 .decor-item3 {
-    left: 940px;
+    left: 590px;
 }
 
 .decor-item4 {
-    left: 1245px;
+    left: 900px;
 }
 
 .decor-item-visible {
@@ -105,7 +126,7 @@ h2 {
 .destinations-decor {
     position: absolute;
     top: 935px;
-    right: 380px;
+    right: 620px;
 }
 
 .destinations__name {

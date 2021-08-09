@@ -27,12 +27,13 @@
 
 .subscribe__content {
     position: relative;
-    background: #dfd7f938;
-    border: 1px solid #0000002f;
+    background: #f9f7fe;
+    border: 1px solid #cccccc;
     box-sizing: border-box;
     border-radius: 129px 20px 20px 20px;
     margin-top: 125px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .subscribe__text {

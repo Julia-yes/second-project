@@ -169,16 +169,18 @@ h1 {
     padding: 20px 25px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 0px 80px rgba(0,0,0,0.05);
-    transition: color 0.5s, background 0.5s;
+    box-shadow: 0 0px 80px rgba(0,0,0,0.15),
+    0 20px 35px #f1a50123;
+    transition: color 0.5s, background 0.5s, border 0.5s, transform 0.3s;
     border: 1px solid transparent;
     &:hover {
     background-color: white;
     color: $yellow;
-    transition: color 0.5s, background 0.5s;
+    
+    border: 1px solid $yellow;
     }
     &:active {
-        border: 1px solid $orange;
+        transform: translateY(3px); 
     }
     span {
         font-family: "Google-san";
@@ -193,6 +195,7 @@ h1 {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    
     &:before {
         width: 52px;
         height: 52px;
@@ -203,7 +206,8 @@ h1 {
         border-radius: 50%;
         top: -15px;
         left: -70px;
-        transition: filter 0.3s;
+        transition: filter 0.3s, transform 0.3s;
+        box-shadow: 0 20px 35px #df69512a;
     }
 
     span {
@@ -214,17 +218,23 @@ h1 {
 }
 
 .button-play:hover:before {
-    filter: brightness(120%);
-    transition: filter 0.3s;
+    filter: brightness(140%);
+    
 }
 
 .button-play:active:before {
-    filter: brightness(80%);
-    transition: filter 0.3s;
+    transform: translateY(3px); 
+    
 }
 
 .button-play-polygon {
     position: absolute;
     left: -52px;
     top: 4px;
+    transition: transform 0.3s;
+}
+
+.button-play:active .button-play-polygon {
+    transform: translateY(3px); 
+    
 }
