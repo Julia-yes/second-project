@@ -29,6 +29,7 @@
     font-style: normal;
 }
 
+//colors
 $general-color: #5E6282;
 $nav-color: #212832;
 $orange: #DF6951;
@@ -41,20 +42,19 @@ $shadow-blue: #59b0e638;
 $completed: #8A79DF;
 
 
-
-
 body {
     font-family:  "Poppins" ; 
     width: 100%;
     margin: 0;
     padding: 0;
     color: $general-color;
-    
+    position: relative;    
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-    
-
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
 }

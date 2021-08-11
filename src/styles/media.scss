@@ -1,0 +1,34 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+
+    .header-content-decor {
+        top: 310px;
+        left: -35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .category-plus {
+        right: 0;
+    }
+
+    .reviews {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .destinations-decor {
+        display: none;
+    }
+
+    .subscribe__decor {
+        display: none;
+    }
+}

@@ -1,3 +1,8 @@
+.header {
+    position: relative;
+    padding-top: 50px;    
+}
+
 .orange-decor {
     position: absolute;
     top: 0;
@@ -6,33 +11,33 @@
 }
 
 .header__nav {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
     justify-content: space-between;
-    margin-top: 55px;
 }
 
 .nav__content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr;
     z-index: 1;
 
     .nav__items{
-        display: flex;
-        flex-direction: row;
+        display: flex;        
+        justify-content: space-around;
         list-style: none;
+        padding: 0;
 
         .nav__item{
             
             a {
                 text-decoration: none;
-                margin-right: 60px;
                 color: $nav-color;
                 font-family: "Google-sans";
                 font-size: 17px;
                 line-height: 100%;
                 letter-spacing: 0%;
             }
+
             a:active {
                 color: $orange;
             }
@@ -42,7 +47,6 @@
 
 .nav__item-point{
     position: relative;
-    
 }
 
 .nav__item-point:active{
@@ -69,6 +73,7 @@
 
 .nav__subscription {
     display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -76,21 +81,21 @@
 
 .subscription-button {
     background-color: transparent;
-    border: none;
-    margin-right: 60px;
+    border: none;    
     color: $nav-color;
     font-family: "Google-sans";
     font-size: 17px;
     line-height: 100%;
     letter-spacing: 0%;
-    border: 1px solid transparent;
-    padding: 10px 20px;
+    border: 1px solid transparent;    
     cursor: pointer;
+
     &:hover {
         border: 1px solid $nav-color;
         border-radius: 5px;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0.05);
     }
+
     &:active {
         box-shadow: inset 0 4px 4px 0 rgba(0,0,0,0.05);
     }
@@ -98,12 +103,14 @@
 
 .nav__languages {
 display: flex;
+justify-content: space-around;
 }
 
 .languages-select {
     border: none;
     background-color: transparent;
     cursor: pointer;
+
     &:hover {
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0.05);
     }
@@ -111,21 +118,23 @@ display: flex;
 
 .header__main {
     position: relative;
-    margin-top: 50px;
-    
-    
+    margin-top: 50px;   
 }
 
 .header-content {
     width: 50%;
-    padding-top: 110px;
     z-index: 1;
+    padding-top: 100px;
+}
+
+.header__main-content {
+    margin: 0;
 }
 
 .header__main-image {
     position: absolute;
     top: 0;
-    right:-90px;
+    right:0px;
 }
 
 .header-content__title {
@@ -162,31 +171,50 @@ h1 {
     line-height: 30px;
 }
 
-.button-find {
+.button__origin {
     background-color: $yellow;
     color: white;
     border-radius: 10px;
-    padding: 20px 25px;
+    padding: 20px 50px;
     border: none;
     cursor: pointer;
     box-shadow: 0 0px 80px rgba(0,0,0,0.15),
     0 20px 35px #f1a50123;
     transition: color 0.5s, background 0.5s, border 0.5s, transform 0.3s;
     border: 1px solid transparent;
+
     &:hover {
     background-color: white;
-    color: $yellow;
-    
+    color: $yellow;    
     border: 1px solid $yellow;
     }
+
     &:active {
         transform: translateY(3px); 
     }
+
     span {
         font-family: "Google-san";
         font-size: 18px;
     }
 
+}
+
+.button__origin-orange {
+    background-color: $orange;
+    margin-left: 25px;
+
+    &:hover {
+        color: $orange;    
+        border: 1px solid $orange;        
+    }
+}
+
+.button-play-polygon {
+    position: absolute;
+    left: -52px;
+    top: 4px;
+    transition: transform 0.3s;
 }
 
 .button-play {
@@ -212,29 +240,18 @@ h1 {
 
     span {
         font-family: "Poppins";
-            font-size: 17px;
+        font-size: 17px;
     }
-    
-}
 
-.button-play:hover:before {
-    filter: brightness(140%);
-    
-}
+    &:hover:before {
+        filter: brightness(140%);    
+    }
 
-.button-play:active:before {
-    transform: translateY(3px); 
-    
-}
-
-.button-play-polygon {
-    position: absolute;
-    left: -52px;
-    top: 4px;
-    transition: transform 0.3s;
+    &:active:before {
+        transform: translateY(3px);     
+    }
 }
 
 .button-play:active .button-play-polygon {
     transform: translateY(3px); 
-    
 }
