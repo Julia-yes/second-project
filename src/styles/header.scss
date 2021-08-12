@@ -7,7 +7,67 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 0;
+    z-index: -1;
+}
+
+.hamburger {
+    z-index: 8;
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 30px;    
+    background-color: #FFF1DA;
+    border: none;
+    cursor: pointer;
+    top: 30px;
+    left: 15px;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.line_middle:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.line_top {
+    top: 0;
+}   
+
+.line_bottom {
+    bottom: 0;
+}
+
+.hamburger_close .line_top,
+.hamburger_close .line_bottom{
+   opacity: 0;
+   transition: all 0.5s;
+}
+
+.hamburger_close .line_middle,
+.hamburger_close .line_middle:before{
+   transform: rotate(45deg);
+   background-color: red;
+   
+}
+
+.hamburger_close .line_middle:before{
+    transform: rotate(-90deg);
 }
 
 .header__nav {

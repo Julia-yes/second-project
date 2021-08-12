@@ -2,6 +2,8 @@ const sliderButtons = document.querySelectorAll(".slider__button");
 const slides = document.querySelectorAll(".review");
 const arrowTop = document.querySelector(".slider__arrow_top");
 const arrowBottom = document.querySelector(".slider__arrow_bottom");
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav__items");
 
 let currentSlide = 0;
 
@@ -41,4 +43,9 @@ arrowTop.addEventListener('click', function() {
         currentSlide++;
     }
     render(currentSlide, slides, sliderButtons);
+})
+
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle("hamburger_close");
+    nav.classList.toggle("nav_phone");
 })

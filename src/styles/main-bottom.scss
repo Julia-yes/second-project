@@ -27,13 +27,15 @@
     background: #f9f7fe;
     border: 1px solid #cccccc;
     box-sizing: border-box;
-    border-radius: 129px 20px 20px 20px;
-    margin-top: 150px;
+    border-radius: 129px 20px 20px 20px;    
     overflow: hidden;
     z-index: 2;
 }
 
 .subscribe__text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
     font-size: 33px;
     font-weight: 600;
     line-height: 54px;
