@@ -1,3 +1,7 @@
+main {
+    overflow: hidden;
+}
+
 section {
     margin-top: 150px;   
 }
@@ -35,8 +39,7 @@ h2 {
 .category__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
-    
+    column-gap: 40px;    
 }
 
 .category-item {
@@ -126,7 +129,7 @@ h2 {
     font-family: "Poppins";
     font-size: 16px;
     text-align: center;
-    margin: 15px 40px 40px 40px;
+    margin: 15px;
     line-height: 26px;
 }
 

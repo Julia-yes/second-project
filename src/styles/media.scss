@@ -7,6 +7,10 @@
         top: 310px;
         left: -35px;
     }
+
+    .trip {
+        top: 200px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -14,23 +18,34 @@
         width: 100%;
     }
 
+    .header__nav {
+        grid-template-columns: 1fr 8fr;        
+    }
+
     .header__main-image {
         width: 50%;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .header-content-decor {
+        display: none;
     }
 
     .header__main-content {
     padding-top: 0;
     }
 
-    .header-content-decor {
-        top: 210px;
-        left: -35px;
-    }
-
     .category-plus {
         right: 0;
     }
 
+    .category__items {
+        column-gap: 10px;    
+    }
     .reviews {
         h2 {
             font-size: 40px;
@@ -47,6 +62,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header__main {
+        padding-right: 30px;
+    }
+    
     .header__nav {
         grid-template-columns: 2fr 8fr;        
     }
@@ -59,8 +78,8 @@
         width: 100%;
     }
 
-    .header-content-decor {
-        display: none;
+    .header-content__text {
+        width: 100%;
     }
 
     .category-plus {
@@ -90,7 +109,6 @@
         left:50%;
         transform: translate(-50%, 10%);
     }
-
 
     .trip__name {
         margin-top: 30px;
@@ -140,10 +158,6 @@
         row-gap: 30px;
     }
 
-    .destination-background {
-        height: 350px;
-    }
-
     .hamburger {
         display: inline-block;
     }
@@ -158,7 +172,6 @@
         z-index: 5;
         padding-top: 20px;
     }
-
 
     .nav__content .nav__items {
         z-index: 7;
@@ -187,12 +200,9 @@
     }
 
     .nav__content .nav__items .nav__item a {
-
         color: white;
         font-size: 25px;
-        line-height: 200%;
-        
-        
+        line-height: 200%;               
     }
 
      .header {
@@ -207,22 +217,67 @@
         margin-top: 0;
         padding-top: 100px;
     }
+
+    .reviews {
+        display: block;
+    }
+
+    .reviews__items {
+        margin-top: 75px;
+    }
+
+    .slider__arrows {
+        z-index: 2;
+    }
+
+    .slider__buttons {
+        bottom: -45px;
+    }
 }
 
+
 @media screen and (max-width: 576px) {
+    
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .button-play-wrapper {        
+        margin-left: 10px;
+    }
+
+    .button-play {       
+        margin-left: 70px;
+    }
+
     section {
         margin-top: 70px;
+    }
+
+    .category__items {        
+        grid-template-columns: 1fr;
     }
 
     .destinations {
         margin-top: 30px;
     }
 
+    .destination__items {
+        grid-template-columns: 1fr;
+    }
+
+    .trip {
+        width: 300px;
+    }
+
     .subscribe__text {
         font-size: 20px;
-        margin-top: 30px;
-        
+        margin-top: 30px;        
     }
+
     .subscription__form {
         margin: 20px 0;
     }
@@ -236,12 +291,17 @@
     }
 
     .slider__buttons {
-        bottom: 95px;
+        bottom: 20px;
         left: 50%;
     }
     
     .reviews__items .review {
        top: 0px;
+    }
+
+    .review-text {
+        line-height: 25px;
+        font-size: 12;
     }
        
     .first.first {
@@ -250,6 +310,19 @@
 
     .slider__arrows {
         z-index: 2;
+    }
+
+    .input-form input::placeholder {
+        text-align: center;
+    }
+
+    .subscription__input {
+        
+        padding: 0;
+    }
+
+    .subscribe__mail {
+        display: none;
     }
 
     .logos {
@@ -261,9 +334,33 @@
     }
 
     .footer {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;        
     }    
+}
+   
+@media screen and (max-width: 450px) {
+    .f-nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header__nav {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        
+    }
+
+    .nav__logo {
+        margin-left: 50px;
+    }
+
+    .nav__content {
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav__subscription {
+        flex-direction: column;
+    }
 
     
 }

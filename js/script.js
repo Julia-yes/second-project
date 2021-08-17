@@ -10,8 +10,9 @@ let currentSlide = 0;
 function render(index, slides, sliderButtons) {
     slides.forEach(function(slide, slidesIndex) {
         slide.classList.remove("first");
+        slide.classList.remove("new");
     });
-    slides[index].classList.add("first");
+    slides[index].classList.add("new");
     sliderButtons.forEach(function(sliderButton, sliderButtonIndex) {
         sliderButton.classList.remove("slider__button_active");
     });

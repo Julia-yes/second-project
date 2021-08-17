@@ -15,20 +15,27 @@
 
 .reviews__items {
     position: relative;
+    height: 350px;
     
     .review {
         position: absolute;
         top: 80px;
-        right: 0;
+        right: 0px;
         background-color: white;
         border-radius: 10px;
         border: 1px solid transparent;       
         z-index: 1;
         width: 90%;
         border: 1px solid #F7F7F7;
+        transition: all 1s;       
 
         img {
             position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
             top: -30px;
             left: -30px;
         }
@@ -39,15 +46,17 @@
         left: 0;
         box-shadow: 20px 20px 150px rgba(0, 0, 0, 0.082);
         z-index: 2;        
+        transition: all 5s;        
     }
 
-    .review_yellow {
-        color: rgb(182, 182, 3);
+    .new {
+        box-shadow: 20px 20px 150px rgba(0, 0, 0, 0.082);
+        z-index: 2;        
+        transform: translate(-50px, -80px);
+        transition: z-index 0.3s, transform 5.5s;
+        
     }
 
-    .review_green {
-        color: rgb(13, 226, 13);
-    }
 }
 
 .review-content {
@@ -59,6 +68,9 @@
 .review-text {
     text-align: justify;
     line-height: 32px;
+    overflow: hidden;
+    max-height: 100px;
+    text-overflow: ellipsis;
 }
 
 .review-autor {
