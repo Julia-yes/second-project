@@ -68,9 +68,12 @@
 .review-text {
     text-align: justify;
     line-height: 32px;
-    overflow: hidden;
     max-height: 100px;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 .review-autor {

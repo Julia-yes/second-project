@@ -245,6 +245,11 @@
         line-height: 35px;
     }
 
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
     .button-play-wrapper {        
         margin-left: 10px;
     }
@@ -326,7 +331,7 @@
     }
 
     .logos {
-        margin-top: 250px;
+        margin-top: 50px;
     }
     
     footer {
@@ -336,6 +341,10 @@
     .footer {
         grid-template-columns: 1fr;        
     }    
+
+    .review-content {
+        margin: 25px;
+    }
 }
    
 @media screen and (max-width: 450px) {
@@ -362,5 +371,32 @@
         flex-direction: column;
     }
 
-    
+    .button-play {
+        margin-left: 50px;
+    }
+
+    .button-play:before {
+        left:-50px
+    }
+
+    .button-play-polygon {
+        left: -32px;
+    }
+
+    .trip {
+        width: 250px;
+    }
+
+    .trip__holder {
+        position: absolute;
+        width: 50%;
+        top: 185px;
+        right: 0;
+    }
+
+    .button__origin-orange,
+    .subscription__input {
+        height: 50px;
+    }
+
 }
